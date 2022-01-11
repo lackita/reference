@@ -1,123 +1,69 @@
+<!doctype html>
 <html>
-  <head>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<!-- jQuery CDN -->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-	<!-- Bootstrap CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
-	<script type="text/javascript" src="jquery.canvasjs.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-	<!-- Twitter Card -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@colin_queuedr">
-	<meta name="twitter:title" content="Reference">
-	<meta name="twitter:description" content="Reference site for Colin Williams">
-  </head>
-  <body>
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-	  <div class="container-fluid">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header">
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		  </button>
-		  <a class="navbar-brand" href="#">Reference</a>
+	<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top" role="navigation">
+	    <div class="container-fluid">
+		<a class="navbar-brand" href="#">Reference</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+		<div class="collapse navbar-collapse">
+		    <ul class="navbar-nav">
+			<li class="nav-item"><a class="active nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ptolus.html">Ptolus</a></li>
+			<li class="nav-item"><a class="nav-link" href="http://getbootstrap.com">Bootstrap</a></li>
+			<li class="nav-item"><a class="nav-link" href="http://github.com/lackita">GitHub</a></li>
+		    </ul>
 		</div>
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-			<li class="active"><a href="#">Home</a></li>
-			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				Bootstrap <span class="caret"></span>
-			  </a>
-			  <ul class="dropdown-menu" role="menu">
-				<li><a href="http://getbootstrap.com">Home</a></li>
-				<li><a href="http://getbootstrap.com/css/">CSS</a></li>
-				<li><a href="http://getbootstrap.com/components/">Components</a></li>
-				<li><a href="http://getbootstrap.com/javascript/">JavaScript</a></li>
-				<li><a href="http://hackerthemes.com/bootstrap-cheatsheet">v4 Cheat Sheet</a></li>
-			  </ul>
-			</li>
-			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				Clojure <span class="caret"></span>
-			  </a>
-			  <ul class="dropdown-menu" role="menu">
-				<li><a href="http://clojure.org/cheatsheet">Cheat Sheet</a></li>
-				<li><a href="http://cljs.info/cheatsheet">Clojurescript Cheat Sheet</a></li>
-				<li><a href="http://www.clojure-toolbox.com">Toolbox</a></li>
-				<li><a href="https://github.com/clojure/test.check">test.check</a></li>
-			  </ul>
-			</li>
-			<li>
-			  <a href="http://github.com/lackita">GitHub</a>
-			</li>
-			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				Arkham Horror <span class="caret"></span>
-			  </a>
-			  <ul class="dropdown-menu" role="menu">
-				<li><a href="http://www.fantasyflightgames.com/ffg_content/Arkham_Horror/AH_Rules_internat.pdf">Rules</a></li>
-				<li><a href="http://www.fantasyflightgames.com/ffg_content/Arkham_Horror/AHfaq.pdf">FAQ</a></li>
-				<li role="presentation" class="dropdown-header">Wiki</li>
-				<li><a href="http://www.arkhamhorrorwiki.com/Monterey_Jack">Monterey Jack</a></li>
-				<li><a href="http://www.arkhamhorrorwiki.com/Cthulhu">Cthulu</a></li>
-				<li><a href="http://www.arkhamhorrorwiki.com/Azathoth">Azathoth</a></li>
-			  </ul>
-			</li>
-			<li><a href="http://rootstowings.com/class-schedule.htm">Yoga</a></li>
-			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-				Coursera <span class="caret"></span>
-			  </a>
-			  <ul class="dropdown-menu" role="menu">
-				<li><a href="https://www.coursera.org/specialization/mobilecloudcomputing2/36?utm_source=email&utm_medium=growth&utm_campaign=android1Amacro">Android</a></li>
-				<li><a href="https://www.coursera.org/specialization/cloudcomputing/19?utm_medium=listingPage">Cloud Computing</a></li>
-			  </ul>
-			</li>
-		  </ul>
-		</div>
-	  </div>
+	    </div>
 	</nav>
 	<div class="container-fluid">
-	  <div class="row">
-		<div class="col-xs-6">
-		  <h3><a href="http://c2.com/cgi/wiki?XpSimplicityRules">
+	    <div class="row">
+                <div class="col">
+		    <h3><a href="http://c2.com/cgi/wiki?XpSimplicityRules">
 			Four Rules of Simple Design
-		  </a></h3>
-		  <ol>
+		    </a></h3>
+		    <ol>
 			<li>Passes all the tests.</li>
 			<li>Expresses every idea that we need to express.</li>
 			<li>
-			  Says everything
-			  <a href="http://c2.com/cgi/wiki?OnceAndOnlyOnce">
+			    Says everything
+			    <a href="http://c2.com/cgi/wiki?OnceAndOnlyOnce">
 				OnceAndOnlyOnce.
-			  </a>
+			    </a>
 			</li>
 			<li>Has no superfluous parts.</li>
-		  </ol>
+		    </ol>
 		</div>
-		<div class="col-xs-6">
-		  <h3><a href="http://themacro.com/articles/2016/07/how-to-email-early-stage-investors/">
-		    Email Guidelines
-		  </a></h3>
-		  Sentences:
-		  <ol>
-		    <li>Context</li>
-		    <li>Sell</li>
-		    <li>Ask</li>
-		  </ol>
+		<div class="col">
+		    <h3><a href="http://themacro.com/articles/2016/07/how-to-email-early-stage-investors/">
+		        Email Guidelines
+		    </a></h3>
+		    Sentences:
+		    <ol>
+		        <li>Context</li>
+		        <li>Sell</li>
+		        <li>Ask</li>
+		    </ol>
 		</div>
-		<div class="col-xs-6">
-		  <h3>Alan Kay's Guidelines for Building the Future</h3>
-		  <ol>
+            </div>
+            <div class="row">
+		<div class="col">
+		    <h3>Alan Kay's Guidelines for Building the Future</h3>
+		    <ol>
 			<li>Really Advance Something Very Important</li>
 			<li>Visions not goals</li>
 			<li>Fund people not projects</li>
@@ -137,129 +83,110 @@
 			<li>Better and perfect are the two enemies of WHAT IS ACTUALLY NEEDED!</li>
 			<li>You miss 100% of the shots you don't take! A good hockey player goes to where the puck is; a great one goes to where the puck will be!</li>
 			<li>Go out to the future and bring the future back</li>
-		  </ol>
+		    </ol>
 		</div>
-		<div class="col-xs-6">
-			<h3>QueueDr Values</h3>
-			<ul>
-				<li>Empathy</li>
-				<li>Self-Responsibility</li>
-				<li>Humility</li>
-				<li>The Team > Self</li>
-				<li>Excellence</li>
-			</ul>
-			<h3><a href="http://strftime.org/">strftime</a></h3>
-			<dl>
-			  <dd>%A</dd>
-			  <dt>Day of Week</dt>
-			  <dt>%-I</dt>
-			  <dd>Hour</dd>
-			  <dt>%M</dt>
-			  <dd>Minute</dd>
-			  <dt>%p</dt>
-			  <dd>AM/PM</dd>
-			</dl>
-		</div>
-		<div class="col-xs-6">
-		  <h3><a href="https://m.facebook.com/notes/kent-beck/mastering-programming/1184427814923414/">
+		<div class="col">
+		    <h3><a href="https://m.facebook.com/notes/kent-beck/mastering-programming/1184427814923414/">
 		  	Mastering Programming
-		  </a></h3>
-		  <dl>
-		    <dt>Time</dt>
-		    <dd><ul>
-		      <li>Slicing</li>
-		      <li>One thing at a time</li>
-		      <li>Make it run, make it right, make it fast</li>
-		      <li>Easy changes</li>
-		      <li>Concentration</li>
-		      <li>Isolation</li>
-		      <li>Baseline measurement</li>
-		    </ul></dd>
-		    <dt>Learning</dt>
-		    <dd><ul>
-		      <li>Call your shot</li>
-		      <li>Concrete hpotheses</li>
-		      <li>Remove extraneous detail</li>
-		      <li>Multiple scales</li>
-		    </ul></dd>
-		    <dt>Transcend Logic</dt>
-		    <dd><ul>
-		      <li>Symmetry</li>
-		      <li>Aesthetics</li>
-		      <li>Rhythm</li>
-		      <li>Tradeoffs</li>
-		    </ul></dd>
-		    <dt>Risk</dt>
-		    <dd><ul>
-		      <li>Fun list</li>
-		      <li>Feed ideas</li>
-		      <li>80/15/5</li>
-		    </ul></dd>
-		  </dl>
+		    </a></h3>
+		    <dl>
+		        <dt>Time</dt>
+		        <dd><ul>
+		            <li>Slicing</li>
+		            <li>One thing at a time</li>
+		            <li>Make it run, make it right, make it fast</li>
+		            <li>Easy changes</li>
+		            <li>Concentration</li>
+		            <li>Isolation</li>
+		            <li>Baseline measurement</li>
+		        </ul></dd>
+		        <dt>Learning</dt>
+		        <dd><ul>
+		            <li>Call your shot</li>
+		            <li>Concrete hpotheses</li>
+		            <li>Remove extraneous detail</li>
+		            <li>Multiple scales</li>
+		        </ul></dd>
+		        <dt>Transcend Logic</dt>
+		        <dd><ul>
+		            <li>Symmetry</li>
+		            <li>Aesthetics</li>
+		            <li>Rhythm</li>
+		            <li>Tradeoffs</li>
+		        </ul></dd>
+		        <dt>Risk</dt>
+		        <dd><ul>
+		            <li>Fun list</li>
+		            <li>Feed ideas</li>
+		            <li>80/15/5</li>
+		        </ul></dd>
+		    </dl>
 		</div>
-		<div class="col-xs-6">
-		  <h3><a href="http://www.slideshare.net/evandrix/simple-made-easy">
+            </div>
+            <div class="row">
+		<div class="col">
+		    <h3><a href="http://www.slideshare.net/evandrix/simple-made-easy">
 			Simple Made Easy
-		  </a></h3>
-		  <h4>Abstraction Questions</h4>
-		  <ul>
+		    </a></h3>
+		    <h4>Abstraction Questions</h4>
+		    <ul>
 			<li>Who - Build from subcomponents that don't rely on each other</li>
 			<li>What - Don't complect with How by jamming an interface with implementation.</li>
 			<li>When, Where - two components should communicate via a queue instead of directly.</li>
 			<li>Why - Business logic</li>
 			<li>How - Do the work</li>
-		  </ul>
-		  <table class="table">
+		    </ul>
+		    <table class="table">
 			<thead>
-			  <tr><th>Complexity</th><th>Simplicity</th></tr>
+			    <tr><th>Complexity</th><th>Simplicity</th></tr>
 			</thead>
 			<tbody>
-			  <tr><td>State, Objects</td><td>Values</td></tr>
-			  <tr><td>Methods</td><td>Functions, Namespaces</td></tr>
-			  <tr><td>vars</td><td>Managed refs</td></tr>
-			  <tr><td>Inheritance, switch, matching</td><td>Polymorphism a la carte</td></tr>
-			  <tr><td>Syntax</td><td>Data</td></tr>
-			  <tr><td>Imperative loops, fold</td><td>Set functions</td></tr>
-			  <tr><td>Actors</td><td>Queues</td></tr>
-			  <tr><td>ORM</td><td>Declarative data manipulation</td></tr>
-			  <tr><td>Conditionals</td><td>Rules</td></tr>
-			  <tr><td>Inconsistency</td><td>Consistency</td></tr>
+			    <tr><td>State, Objects</td><td>Values</td></tr>
+			    <tr><td>Methods</td><td>Functions, Namespaces</td></tr>
+			    <tr><td>vars</td><td>Managed refs</td></tr>
+			    <tr><td>Inheritance, switch, matching</td><td>Polymorphism a la carte</td></tr>
+			    <tr><td>Syntax</td><td>Data</td></tr>
+			    <tr><td>Imperative loops, fold</td><td>Set functions</td></tr>
+			    <tr><td>Actors</td><td>Queues</td></tr>
+			    <tr><td>ORM</td><td>Declarative data manipulation</td></tr>
+			    <tr><td>Conditionals</td><td>Rules</td></tr>
+			    <tr><td>Inconsistency</td><td>Consistency</td></tr>
 			</tbody>
 			<thead>
-			  <tr><th>Construct</th><th>Complects</th></tr>
+			    <tr><th>Construct</th><th>Complects</th></tr>
 			</thead>
 			<tbody>
-			  <tr><td>State</td><td>Everything that touches it</td></tr>
-			  <tr><td>Objects</td><td>State, identity, value</td></tr>
-			  <tr><td>Methods</td><td>Function and state, namespaces</td></tr>
-			  <tr><td>Syntax</td><td>Meaning, order</td></tr>
-			  <tr><td>Inheritance</td><td>Types</td></tr>
-			  <tr><td>Switch/matching</td><td>Multiple who/what pairs</td></tr>
-			  <tr><td>var(iable)s</td><td>Value, time</td></tr>
-			  <tr><td>Imperative loops, fold</td><td>what/how</td></tr>
-			  <tr><td>Actors</td><td>what/who</td></tr>
-			  <tr><td>ORM</td><td>OMG</td></tr>
-			  <tr><td>Conditionals</td><td>Why, rest of program</td></tr>
+			    <tr><td>State</td><td>Everything that touches it</td></tr>
+			    <tr><td>Objects</td><td>State, identity, value</td></tr>
+			    <tr><td>Methods</td><td>Function and state, namespaces</td></tr>
+			    <tr><td>Syntax</td><td>Meaning, order</td></tr>
+			    <tr><td>Inheritance</td><td>Types</td></tr>
+			    <tr><td>Switch/matching</td><td>Multiple who/what pairs</td></tr>
+			    <tr><td>var(iable)s</td><td>Value, time</td></tr>
+			    <tr><td>Imperative loops, fold</td><td>what/how</td></tr>
+			    <tr><td>Actors</td><td>what/who</td></tr>
+			    <tr><td>ORM</td><td>OMG</td></tr>
+			    <tr><td>Conditionals</td><td>Why, rest of program</td></tr>
 			</tbody>
 			<thead>
-			  <tr><th>Construct</th><th>Get it via...</th></tr>
+			    <tr><th>Construct</th><th>Get it via...</th></tr>
 			</thead>
 			<tbody>
-			  <tr><td>Values</td><td>final, persistent collections</td></tr>
-			  <tr><td>Functions</td><td>a.k.a. stateless methodsd</td></tr>
-			  <tr><td>Namespaces</td><td>language support</td></tr>
-			  <tr><td>Data</td><td>Maps, arrays, sets, XML, JSON etc</td></tr>
-			  <tr><td>Polymorphism a la carte</td><td>Protocols, type classes</td></tr>
-			  <tr><td>Managed refs</td><td>Clojure/Haskell refs</td></tr>
-			  <tr><td>Set functions</td><td>Libraries</td></tr>
-			  <tr><td>Queues</td><td>Libraries</td></tr>
-			  <tr><td>Declarative data manipulation</td><td>SQL/LINQ/Datalog</td></tr>
-			  <tr><td>Rules</td><td>Libraries, Prolog</td></tr>
-			  <tr><td>Consistency</td><td>Transactions, values</td></tr>
+			    <tr><td>Values</td><td>final, persistent collections</td></tr>
+			    <tr><td>Functions</td><td>a.k.a. stateless methodsd</td></tr>
+			    <tr><td>Namespaces</td><td>language support</td></tr>
+			    <tr><td>Data</td><td>Maps, arrays, sets, XML, JSON etc</td></tr>
+			    <tr><td>Polymorphism a la carte</td><td>Protocols, type classes</td></tr>
+			    <tr><td>Managed refs</td><td>Clojure/Haskell refs</td></tr>
+			    <tr><td>Set functions</td><td>Libraries</td></tr>
+			    <tr><td>Queues</td><td>Libraries</td></tr>
+			    <tr><td>Declarative data manipulation</td><td>SQL/LINQ/Datalog</td></tr>
+			    <tr><td>Rules</td><td>Libraries, Prolog</td></tr>
+			    <tr><td>Consistency</td><td>Transactions, values</td></tr>
 			</tbody>
-		  </table>
+		    </table>
 		</div>
-	  </div>
+            </div>
 	</div>
-  </body>
+    </body>
 </html>
